@@ -1,0 +1,132 @@
+body {
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'VT323', monospace;
+}
+
+.receipt {
+    background-color: #f0f0f0;
+    width: 350px;
+    padding: 20px 20px 40px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /* Subtle paper texture */
+    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("https://www.transparenttextures.com/patterns/crumpled-paper.png");
+    text-transform: uppercase;
+    color: #1d1d1d;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0 5px 0;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.meta-info {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.divider {
+    border-bottom: 2px dashed #1d1d1d;
+    margin: 10px 0;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.track-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    padding: 2px 0;
+}
+
+.track-item:hover {
+    background-color: #dcdcdc;
+}
+
+.track-item.playing {
+    background-color: #bfbfbf;
+    font-weight: bold;
+}
+
+.qty {
+    width: 10%;
+}
+
+.details {
+    width: 75%;
+    padding-right: 5px;
+}
+
+.amt {
+    width: 15%;
+    text-align: right;
+}
+
+.song-title {
+    display: block;
+}
+
+.artist {
+    display: block;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+/* Button Styles */
+button {
+    font-family: 'VT323', monospace;
+    background: #1d1d1d;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+button:hover {
+    background: #444;
+}
+
+#yes-btn {
+    transition: all 0.2s ease; /* Smooth growing effect */
+}
+
+/* GIF display styling */
+.gif-display {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    display: block;
+}
+
+/* Hide tracks when "Yes" is clicked */
+.hidden {
+    display: none !important;
+}
